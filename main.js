@@ -1,3 +1,4 @@
+!; //usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 10000; //in dollar
 let myPin = 2244;
@@ -41,7 +42,7 @@ if (pinAnswer.pin === myPin) {
                 console.log("Your remaining balance is: " + myBalance);
         }
     }
-    else if (operationAns.operation === "check balance")
+    else if (operationAns.transitionType === "Check balance")
         console.log("yourbalance is: " + myBalance);
 }
 else {

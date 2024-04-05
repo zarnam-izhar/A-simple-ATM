@@ -1,3 +1,5 @@
+
+
 import inquirer from "inquirer";
 
 let myBalance = 10000; //in dollar
@@ -56,8 +58,8 @@ if (pinAnswer.pin === myPin) {
         
 
     }
-    else if (operationAns.operation === "check balance")
-    console.log("yourbalance is: " + myBalance)
+    else if (operationAns.transitionType === "Check balance")
+    console.log("yourbalance is: " + myBalance);
 }
 else {
     console.log("Incorrect pin code");}
